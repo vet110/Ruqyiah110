@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>السر الإلهي - بنت الإمام الحسين عليه السلام رقيّه</title>
+    <!-- مكتبة Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="manifest" href="manifest.json"> <!-- ربط ملف الـ Manifest -->
+    <style>
+        /* التنسيقات العامة */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+            background-color: #f9f9f9;
+            color: #333;
+            padding-bottom: 60px; /* توفير مساحة لشريط الأزرار */
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 24px;
+        }
+
+        /* قسم تشغيل الوسائط */
+        .media-player {
+            width: 90%;
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        video {
+            width: 100%;
+            max-width: 600px;
+            border: 2px solid #00bcd4;
+            border-radius: 10px;
+        }
+
+        /* النبذة التعريفية */
+        .about-section {
+            background-color: #fff;
+            padding: 15px;
+            margin: 20px auto;
+            border-radius: 8px;
+            width: 90%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: justify;
+        }
+
+        /* زر التوسع والطي */
+        .details-button {
+            display: block;
+            width: 90%;
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        button {
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0097a7;
+        }
+
+        /* الأزرار الثانوية */
+        .secondary-buttons {
+            display: none;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        .secondary-buttons a {
+            display: block;
+            padding: 8px;
+            margin: 5px 0;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+        }
+
+        .secondary-buttons a:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* شريط الأزرار السفلي */
+        .bottom-bar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .bottom-bar a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .bottom-bar a i {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .bottom-bar a:hover {
+            color: #00bcd4;
+        }
+
+        /* زر تثبيت التطبيق */
+        #installApp {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        #installApp button {
+            background-color: #00bcd4;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #installApp button:hover {
+            background-color: #0097a7;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- العنوان -->
+    <h1>السر الإلهي - بنت الإمام الحسين عليه السلام رقيّه</h1>
+
+    <!-- مشغل الوسائط -->
+    <div class="media-player">
+        <video controls>
+            <source src="media/video.mp4" type="video/mp4">
+            المتصفح لا يدعم تشغيل الفيديو.
+        </video>
+    </div>
+
+    <!-- النبذة التعريفية -->
+    <div class="about-section">
+        <p>
+            هذا التطبيق يقدم نبذة حول معجزة الرجعة وأحداثها في عالم الملكوت وعالم الدنيا، بالإضافة إلى مناقشة مواضيع النسخ والتقمص وأسباب المعجزة.
+        </p>
+    </div>
+
+    <!-- زر تفاصيل معجزة الرجعة -->
+    <div class="details-button">
+        <button id="toggleButton">تفاصيل معجزة الرجعة</button>
+        <div id="secondaryButtons" class="secondary-buttons">
+            <a href="#">المقدمة</a>
+            <a href="#">أحداث الرجعة في عالم الملكوت</a>
+            <a href="#">أحداث الرجعة في عالم الدنيا</a>
+            <a href="#">ماهي المعجزة</a>
+            <a href="#">إشكاليات موضوع النسخ والتقمص</a>
+            <a href="#">أسباب المعجزة</a>
+            <a href="#">هل تتعارض مع القوانين التكوينية؟</a>
+            <a href="#">هل تتعارض مع رجعة الأئمة المعصومين؟</a>
+            <a href="#">كراماتها بعد الرجعة</a>
+            <a href="#">آيات و براهين</a>
+            <a href="#">إسلوب حياتها و تعايشها في زماننا</a>
+            <a href="#">حوارات ونقاشات</a>
+        </div>
+    </div>
+
+    <!-- شريط الأزرار السفلي -->
+    <div class="bottom-bar">
+        <a href="#"><i class="fas fa-home"></i>الرئيسية</a>
+        <a href="#"><i class="fas fa-list"></i>المواضيع</a>
+        <a href="#"><i class="fas fa-newspaper"></i>المنشورات</a>
+        <a href="#"><i class="fas fa-comments"></i>التواصل</a>
+    </div>
+
+    <!-- زر تثبيت تطبيق ويب -->
+    <div id="installApp"></div>
+
+    <!-- جافا سكربت للتحكم في زر التوسع وPWA -->
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const secondaryButtons = document.getElementById('secondaryButtons');
+
+        toggleButton.addEventListener('click', () => {
+            if (secondaryButtons.style.display === "none" || secondaryButtons.style.display === "") {
+                secondaryButtons.style.display = "flex";
+            } else {
+                secondaryButtons.style.display = "none";
+            }
+        });
+
+        // إعدادات PWA للتثبيت
+        let deferredPrompt;
+        const installAppDiv = document.getElementById('installApp');
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault(); // منع التثبيت التلقائي
+            deferredPrompt = e; // حفظ الحدث
+            installAppDiv.innerHTML = '<button onclick="installApp()">تثبيت التطبيق</button>';
+        });
+
+        function installApp() {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('تم تثبيت التطبيق');
+                    } else {
+                        console.log('لم يتم تثبيت التطبيق');
+                    }
+                    deferredPrompt = null; // إلغاء الحدث بعد التثبيت
+                });
+            }
+        }
+    </script>
+
+</body>
+</html>
