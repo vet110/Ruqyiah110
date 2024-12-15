@@ -36,9 +36,10 @@
             text-align: center;
         }
 
-        video {
+        iframe {
             width: 100%;
             max-width: 600px;
+            height: 350px;
             border: 2px solid #00bcd4;
             border-radius: 10px;
         }
@@ -156,10 +157,11 @@
 
     <!-- مشغل الوسائط -->
     <div class="media-player">
-        <video controls>
-            <source src="media/video.mp4" type="video/mp4">
-            المتصفح لا يدعم تشغيل الفيديو.
-        </video>
+        <iframe 
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
     </div>
 
     <!-- النبذة التعريفية -->
@@ -236,6 +238,5 @@
             }
         }
     </script>
-
 </body>
 </html>
